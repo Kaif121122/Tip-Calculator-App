@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+
+<body>
+
+  <!-- MAIN CONTAINER  -->
+
+  <main class="main-container">
+    <div class="logo-container">
+      <img src="./images/logo.svg" alt="">
+    </div>
+
+    <!-- CALCULATOR CONTAINER  -->
+
+    <div class="calculator-container">
+      <!-- LEFT SECTION  -->
+
+      <div class="left-section">
+        <div class="bill-container">
+          <label for="bill" class="bill-heading">Bill</label>
+
+          <img class="icon-dollar" src="./images/icon-dollar.svg" alt="">
+          <input class="bill-input common-inputs" type="number" id="bill" placeholder="0">
+
+        </div>
+        <div class="tip-container">
+          <label class="tip-heading">Select Tip %</label>
+          <div class="total-tips">
+            <div class="tips-percentage">5%</div>
+            <div class="tips-percentage">10%</div>
+            <div class="tips-percentage">15%</div>
+            <div class="tips-percentage">25%</div>
+            <div class="tips-percentage">50%</div>
+            <input class="custom-tip common-inputs" type="number" placeholder="Custom">
+
+          </div>
+        </div>
+        <div class="number-of-people-container">
+          <div class="error-container">
+            <label for="number-of-people" class="number-of-people-heading">Number of People</label>
+            <label class="error-heading none">Can't be zero</label>
+          </div>
+          <input class="number-of-people-input common-inputs" type="number" id="number-of-people" placeholder="0">
+          <img class="icon-person" src="./images/icon-person.svg" alt="">
+        </div>
+      </div>
+
+      <!-- RIGHT SECTION  -->
+
+      <div class="right-section">
+        <div class="heading-wrapper">
+          <div class="tip-amount-container">
+            <div class="tip-amount">
+              <h1 class="common-heading">
+                Tip Amount</h1>
+              <p class="para">
+                / person</p>
+            </div>
+            <div class="showing-tip-amount showing-amount">
+              $0.00
+            </div>
+          </div>
+          <div class="total-person-container">
+            <div class="total-person">
+              <h1 class="common-heading">
+                Total</h1>
+              <p class="para">
+                / person</p>
+            </div>
+            <div class="showing-total-person-amount showing-amount">
+              $0.00
+            </div>
+          </div>
+        </div>
+
+        <!-- RESET BTN  -->
+        
+        <button class="reset-btn">
+          Reset</button>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
